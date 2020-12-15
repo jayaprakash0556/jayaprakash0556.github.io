@@ -1,0 +1,221 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    visibility: hidden;
+}
+
+#welcome-section {
+    position: static;
+    display: block;
+    height: 100vh;
+    background-color: #303841;
+}
+
+.h1 {
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    opacity: 0;
+    font-size: 2.5rem;
+    animation: hey-i-am 1s ease forwards 1s;
+    transform: translate(-50%, -50%);
+}
+
+.jayaprakash-svg {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p {
+    position: absolute;
+    display: block;
+    top: 58%;
+    right: 20%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #be3144;
+    font-style: italic;
+    animation: web-developer 2s ease forwards 3s;
+}
+
+.jayaprakash-svg path:nth-child(1) {
+    stroke-dasharray: 343.7997741699219;
+    stroke-dashoffset: 343.7997741699219;
+    animation: line-anim 2s ease forwards 5s, svg-fill-red 1.5s ease forwards 6s;
+}
+
+.jayaprakash-svg path:nth-child(2) {
+    stroke-dasharray: 483.8239440917969;
+    stroke-dashoffset: 483.8239440917969;
+    animation: line-anim 2s ease forwards 3, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(3) {
+    stroke-dasharray: 415.1705627441406;
+    stroke-dashoffset: 415.1705627441406;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(4) {
+    stroke-dasharray: 484.0235595703125;
+    stroke-dashoffset: 484.0235595703125;
+    animation: line-anim 2s ease forwards 3, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(5) {
+    stroke-dasharray: 505.1327819824219;
+    stroke-dashoffset: 505.1327819824219;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(6) {
+    stroke-dasharray: 236.3564453125;
+    stroke-dashoffset: 236.3564453125;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(7) {
+    stroke-dasharray: 484.02386474609375;
+    stroke-dashoffset: 484.02386474609375;
+    animation: line-anim 2s ease forwards 3, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(8) {
+    stroke-dasharray: 449.423583984375;
+    stroke-dashoffset: 449.423583984375;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(9) {
+    stroke-dasharray: 484.0237731933594;
+    stroke-dashoffset: 484.0237731933594;
+    animation: line-anim 2s ease forwards 3, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(10) {
+    stroke-dasharray: 424.62164306640625;
+    stroke-dashoffset: 424.62164306640625;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(11) {
+    stroke-dasharray: 453.59576416015625;
+    stroke-dashoffset: 453.59576416015625;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+.jayaprakash-svg path:nth-child(12) {
+    stroke-dasharray: 60.000030517578125;
+    stroke-dashoffset: 60.000030517578125;
+    animation: line-anim 2s ease forwards 5s, svg-fill 1.5s ease forwards 6.5s
+}
+
+
+/* ----------------------- welcome-section animations ----------------------- */
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes svg-fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+@keyframes svg-fill-red {
+    from {
+        fill: transparent;
+        stroke: white;
+    }
+    to {
+        fill: #be3144;
+        stroke: #be3144;
+        stroke-width: 5px;
+    }
+}
+
+@keyframes hey-i-am {
+    to {
+        opacity: 1;
+        left: 40%;
+    }
+}
+
+@keyframes web-developer {
+    to {
+        opacity: 1;
+        right: 40%;
+    }
+}
+
+
+/* ---------------------------------- media 800px --------------------------------- */
+
+@media(max-width:800px) {
+    .h1 {
+        top: 38%;
+        left: 7%;
+        opacity: 0;
+        font-size: 2.2rem;
+    }
+    .jayaprakash-svg {
+        width: 50%;
+        top: 46%;
+        left: 50%;
+    }
+    .p {
+        top: 52%;
+        right: 25%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+
+/* ---------------------------------- media 500px --------------------------------- */
+
+@media(max-width:500px) {
+    .h1 {
+        top: 38%;
+        left: 7%;
+        opacity: 0;
+        font-size: 1.7rem;
+    }
+    .jayaprakash-svg {
+        width: 50%;
+        top: 46%;
+        left: 50%;
+    }
+    .p {
+        top: 52%;
+        right: 35%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    /* ----------------------------- media-animation ---------------------------- */
+    @keyframes hey-i-am {
+        to {
+            opacity: 1;
+            left: 40%;
+        }
+    }
+    @keyframes web-developer {
+        to {
+            opacity: 1;
+            right: 40%;
+        }
+    }
+}
