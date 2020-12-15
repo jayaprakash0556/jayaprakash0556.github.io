@@ -150,8 +150,7 @@ footer {
 }
 
 .footer-details {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     font-size: 2rem;
 }
 
