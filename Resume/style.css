@@ -1,0 +1,240 @@
+/* -------------------------------------------------------------------------- */
+/*                                   resets                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    font                                    */
+/* -------------------------------------------------------------------------- */
+
+
+@font-face {
+    font-family: "Calibri";
+    src: url('./assets/fonts/Calibri/Calibri.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url('./assets/fonts/Calibri/Calibrib.ttf');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "Calibri";
+    src: url('./assets/fonts/Calibri/Calibril.ttf');
+    font-weight: lighter;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    utils                                   */
+/* -------------------------------------------------------------------------- */
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.f-normal {
+    font-weight: normal;
+}
+
+.f-bold {
+    font-weight: bold;
+}
+
+.f-light {
+    font-weight: lighter;
+}
+
+
+.t-right {
+    text-align: right;
+}
+
+.bg-gray {
+    background: #EEECE1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   globaḷ                                   */
+/* -------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Calibri', 'Courier New', Courier, monospace;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    place-content: center;
+
+
+    /* background: linear-gradient(-45deg, #ADA2FF, #C0DEFF, #FFE5F1, #FFF8E1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; */
+}
+
+.resume {
+    border: 1px solid black;
+    width: 595px;
+    min-height: 842px;
+    padding: 16px;
+}
+
+.resume__head {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 16px;
+    border-bottom: 2px dashed black;
+}
+
+.resume__head::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    left: 50%;
+    top: 0;
+    bottom: 16px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.resume__body {
+    padding-top: 20px;
+}
+
+.resume__sectionTitle {
+    padding: 2px 8px;
+}
+
+.resume__sectionCnt {
+    display: flex;
+}
+
+.resume__sectionCntLeft {
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 16px;
+    flex: 0.2;
+    border-right: 1px solid black;
+}
+
+.resume__sectionCntRight {
+    flex: 0.8;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 16px;
+}
+
+.resume__sectionCntRightList {
+    margin-left: 16px;
+}
+
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
